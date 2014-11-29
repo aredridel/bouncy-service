@@ -1,0 +1,8 @@
+{
+  "bouncy": {
+    "description": "route incoming http requests to http servers",
+    "scripts": {
+      "start": "bin/bouncy.js /etc/bouncy/routes.json 8080"
+    }
+  }
+}
