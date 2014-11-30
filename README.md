@@ -6,5 +6,5 @@ This is a tiny wrapper around bouncy that gives a `service.json` to use `ndm` wi
 To use it:
 
 ```
-npm run install-service
+npm run ndm -- install [ -p initd ]
 ```
