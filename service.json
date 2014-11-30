@@ -2,7 +2,13 @@
   "bouncy": {
     "description": "route incoming http requests to http servers",
     "scripts": {
-      "start": "bin/bouncy.js /etc/bouncy/routes.json 8080"
+      "start": "bin/bouncy.js /etc/bouncy/routes.json $PORT"
+    },
+    "env": {
+      "PORT": {
+        "default": "80",
+        "description": "what port should I run on?"
+      }
     }
   }
 }

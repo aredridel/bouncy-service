@@ -1,16 +1,20 @@
 {
   "name": "bouncy-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bouncy as a service integrated with ndm",
   "main": "index.js",
   "scripts": {
-      "install-service": "ndm install"
+      "ndm": "ndm"
   },
-  "author": "",
+  "author": "Aria Stewart <aredridel@dinhe.net>",
   "license": "ISC",
   "dependencies": {
     "bouncy": "^3.2.2",
     "ndm": "^3.7.2"
   },
-  "service": {}
+  "service": {
+      "env": {
+          "PORT": 80
+      }
+  }
 }
